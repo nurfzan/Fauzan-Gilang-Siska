@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Standings - La Liga</title>
+    <title>Teams - Premier League</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -37,7 +37,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./Standings Bundesliga.css" />
+    <link rel="stylesheet" href="./Premier League.css" />
   </head>
 
   <body>
@@ -85,16 +85,18 @@ of Simple CSS Waves-->
                 <a class="nav-link dropdown-toggle text-white rounded-pill px-3" href="../" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false"
                   >Standings</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="../Premier League/Standings Premier League.html">Premier League</a>
-                    <a class="dropdown-item" href="../La Liga/Standings La Liga.html">La Liga</a>
+                    <a class="dropdown-item" href="./Standings Premier League.html">Premier League</a>
+                    <a class="dropdown-item" href="./">La Liga</a>
+                    <a class="dropdown-item" href="./">Bundesliga</a>
+
                   </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white rounded-pill px-3" href="../"
                   >Teams</a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="../Premier League/">Premier League</a>
-                    <a class="dropdown-item" href="../La Liga/Standings La Liga.html">La Liga</a>
+                    <a class="dropdown-item" href="./Teams - Premier League.html">Premier League</a>
+                    <a class="dropdown-item" href="./" >La Liga</a>
                   </div>
               </li>
               <li class="nav-item">
@@ -106,10 +108,10 @@ of Simple CSS Waves-->
         </nav>
         <!--Content before waves-->
         <div class="inner-header flex">
-          <img src="./Bundesliga.png" alt="Bundesliga" class="w-50" />
+          <img src="./Premier League.png" alt="Premier League" class="w-50" />
         </div>
         <br />
-        <h1>Standings</h1>
+        <h1>Teams</h1>
 
         <!--Waves Container-->
         <div>
@@ -154,104 +156,61 @@ of Simple CSS Waves-->
       </div>
       <!--Header ends-->
 
-      <div class="container table-responsive">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Pos</th>
-              <th scope="col">Club</th>
-              <th scope="col">PG</th>
-              <th scope="col">W</th>
-              <th scope="col">D</th>
-              <th scope="col">L</th>
-              <th scope="col">GF</th>
-              <th scope="col">GA</th>
-              <th scope="col">GD</th>
-              <th scope="col">Pts</th>
-            </tr>
-          </thead>
-          <tbody id="list-standings"></tbody>
-        </table>
-      </div>
-    </div>
-
+        <div class="container table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Team</th>
+                <th scope="col">Logo</th>
+                <th scope="col">Homebase</th>
+              </tr>
+            </thead>
+            <tbody id="list-teams"></tbody>
+          </table>
+        </div>
     <script>
- $(document).ready(function () {
+$(document).ready(function () {
         setTimeout(() => {
           $("#loading").hide();
           $("#main").show("slow");
         }, 3000);
       });
 
-      const API =
-        "https://api.football-data.org/v2/competitions/2002/standings?standingType=HOME";
-      const token = "21e70eeb7ec84f2d86efba5a000ea07a";
+        const API = "https://api.football-data.org/v2/competitions/2021/teams";
+        const token = "21e70eeb7ec84f2d86efba5a000ea07a";
       const headers = {
         headers: {
           "X-Auth-Token": token,
         },
       };
-      const getStandings = async () => {
-        try {
-          const response = await axios.get(API, headers);
-          const listStandings = response.data.standings[0].table;
-          let listHtml = "";
-          listStandings.forEach((element, index) => {
-            console.log(element);
-            let rowColor = "";
-            if (index < 3) {
-              rowColor = "table-success";
-            } else if (index > listStandings.length - 4) {
-              rowColor = "table-danger";
-            }
-            listHtml += `
-                    <tr class="${rowColor}">
+      const getTeams = async () => {
+          try {
+              const response = await axios.get(API, headers);
+              const listTeams = response.data.teams;
+              let listHtml = "";
+              listTeams.forEach((element, index) => {
+                console.log(element);
+                listHtml += `
+                <tr>
                     <td>
-                        ${element.position}
+                        ${element.name}
                     </td>
                     <td>
-                        <img src="${element.team.crestUrl}" alt="${element.team.name}" height="20px" style="margin-right:10px">
-                        ${element.team.name}
+                        <img src="${element.crestUrl}" alt="${element.name}" height="75px" widht="75px">
                     </td>
                     <td>
-                        ${element.playedGames}
-                    </td>
-                    <td>
-                        ${element.won}
-                        
-                    </td>
-                    <td>
-                        ${element.draw}
-                    </td>
-                    <td>
-                        ${element.lost}
-                        
-                    </td>
-                    <td>
-                        ${element.goalsFor}
-                        
-                    </td>
-                    <td>
-                        ${element.goalsAgainst}
-                        
-                    </td>
-                    <td>
-                        ${element.goalDifference}
-                        
-                    </td>
-                    <td>
-                        ${element.points}
+                        ${element.venue}  
                     </td>
                 </tr>
-                    `;
-          });
-          $("#list-standings").html(listHtml);
-          console.log(response);
-        } catch (error) {
-          console.log(error);
-        }
+                `;
+              });
+              $("#list-teams").html(listHtml);
+              console.log(response)
+          } catch (error) {
+            console.log(error); 
+          }
       };
-      getStandings();
+      getTeams();
     </script>
-  </body>
+</body>
 </html>

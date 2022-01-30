@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teams - La Liga</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -37,31 +39,32 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./La Liga.css" />
-  </head>
-
-  <body>
+    <!--  -->
+    <link rel="stylesheet" href="maches.css">
+</head>
+<body>
     <!--Hey! This is the original version
 of Simple CSS Waves-->
-    <div id="loading">
-      <div class="d-flex justify-content-center vh-100">
-        <div class="d-flex align-items-center">
-          <div class="spinner-grow" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-grow" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-grow" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
+<div id="loading">
+    <div class="d-flex justify-content-center vh-100">
+      <div class="d-flex align-items-center">
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow" role="status">
+          <span class="sr-only">Loading...</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="main" style="display: none">
-      <div class="header">
-         <!-- tes -->
+  <div id="main" style="display: none">
+    <div class="header">
+      
+      <!-- tes -->
       <div class="navbar">
         <nav class="navbar navbar-expand-lg navbar-dark">
         
@@ -174,112 +177,84 @@ of Simple CSS Waves-->
 
     </div>
       <!-- tes -->
-        <!--Content before waves-->
-        <div class="inner-header flex">
-          <img src="./La Liga.png" alt="La Liga" class="w-50" />
-        </div>
-        <br />
-        <h1>Teams</h1>
 
-        <!--Waves Container-->
-        <div>
-          <svg
-            class="waves"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28"
-            preserveAspectRatio="none"
-            shape-rendering="auto"
-          >
-            <defs>
-              <path
-                id="gentle-wave"
-                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-              />
-            </defs>
-            <g class="parallax">
-              <use
-                xlink:href="#gentle-wave"
-                x="48"
-                y="0"
-                fill="rgba(255,255,255,0.7"
-              />
-              <use
-                xlink:href="#gentle-wave"
-                x="48"
-                y="3"
-                fill="rgba(255,255,255,0.5)"
-              />
-              <use
-                xlink:href="#gentle-wave"
-                x="48"
-                y="5"
-                fill="rgba(255,255,255,0.3)"
-              />
-              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-            </g>
-          </svg>
-        </div>
-        <!--Waves end-->
+
+      <!--Content before waves-->
+      <div class="inner-header flex">
+        <img src="img/premier.png" alt="Bundesliga"  style="width: 25%;"/>
       </div>
-      <!--Header ends-->
+      <br />
+      <h1>Match</h1>
 
-        <div class="container table-responsive">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Team</th>
-                <th scope="col">Logo</th>
-                <th scope="col">Homebase</th>
-              </tr>
-            </thead>
-            <tbody id="list-teams"></tbody>
-          </table>
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+    </div>
+  </div>
+    <!--Header ends-->
+
+
+
+
+    <div class="container">
+        <!-- matchday -->
+        <div class="matchday" id="daftar-match">
+        <div class="main-container">
+            <div class="header-main">
+                <h5>Machday </h5>
+            </div>
+            <div class="content-main" >
+                <div class="content-matchday"id="main-matchday">
+                 <!-- matchday 1 -->
+            
+            
+            <!-- akhir matchday 1 -->
+
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    <script>
-$(document).ready(function () {
-        setTimeout(() => {
-          $("#loading").hide();
-          $("#main").show("slow");
-        }, 3000);
-      });
+            </div>
+        </div>
+    </div>
+        <!-- matchday -->
 
-        const API = "https://api.football-data.org/v2/competitions/2014/teams";
-        const token = "21e70eeb7ec84f2d86efba5a000ea07a";
-      const headers = {
-        headers: {
-          "X-Auth-Token": token,
-        },
-      };
-      const getTeams = async () => {
-          try {
-              const response = await axios.get(API, headers);
-              const listTeams = response.data.teams;
-              let listHtml = "";
-              listTeams.forEach((element, index) => {
-                console.log(element);
-                listHtml += `
-                <tr>
-                    <td>
-                        ${element.name}
-                    </td>
-                    <td>
-                        <img src="${element.crestUrl}" alt="${element.name}" height="75px" widht="75px">
-                    </td>
-                    <td>
-                        ${element.venue}  
-                    </td>
-                </tr>
-                `;
-              });
-              $("#list-teams").html(listHtml);
-              console.log(response)
-          } catch (error) {
-            console.log(error); 
-          }
-      };
-      getTeams();
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </div>
+    <script src="maches.js"></script>
 </body>
 </html>

@@ -1,0 +1,806 @@
+
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+      background-color: white;
+    }
+    
+      .header-2-3 .modal-backdrop.show {
+        background-color: #707092;
+        opacity: 0.6;
+      }
+
+      .header-2-3 .modal-item.modal {
+        top: 2rem;
+      }
+
+      .header-2-3 .navbar,
+      .header-2-3 .hero {
+        padding: 3rem 2rem;
+      }
+
+      .header-2-3 .navbar-dark .navbar-nav .nav-link {
+        font: 300 18px/1.5rem Poppins, sans-serif;
+        color: #707092;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .navbar-dark .navbar-nav .nav-link:hover {
+        font: 600 18px/1.5rem Poppins, sans-serif;
+        color: #E7E7E8;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .navbar-dark .navbar-nav .active>.nav-link,
+      .header-2-3 .navbar-dark .navbar-nav .nav-link.active,
+      .header-2-3 .navbar-dark .navbar-nav .nav-link.show,
+      .header-2-3 .navbar-dark .navbar-nav .show>.nav-link {
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .header-2-3 .btn:focus,
+      .header-2-3 .btn:active {
+        outline: none !important;
+      }
+
+      .header-2-3 .btn-fill {
+        font: 600 18px / normal Poppins, sans-serif;
+        background-color: #524EEE;
+        border-radius: 12px;
+        padding: 12px 32px;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-fill:hover {
+        --tw-shadow: inset 0 0px 25px 0 rgba(20, 20, 50, 0.7);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-no-fill {
+        font: 300 18px/1.75rem Poppins, sans-serif;
+        color: #E7E7E8;
+        padding: 12px 32px;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-no-fill:hover {
+        color: #E7E7E8;
+      }
+
+      .header-2-3 .modal-item .modal-dialog .modal-content {
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .responsive li a {
+        padding: 1rem;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .left-column {
+        margin-bottom: 2.75rem;
+        width: 100%;
+      }
+
+      .header-2-3 .text-caption {
+        font: 600 0.875rem/1.625 Poppins, sans-serif;
+        margin-bottom: 2rem;
+        color: #FB6262;
+      }
+
+      .header-2-3 .title-text-big {
+        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        margin-bottom: 2rem;
+        color: #CBCBD2;
+        font-size: 570px;
+      }
+
+      .header-2-3 .btn-try {
+        font: 600 1rem/1.5rem Poppins, sans-serif;
+        padding: 1rem 1.5rem;
+        border-radius: 0.75rem;
+        background-color: #524EEE;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-try:hover {
+        --tw-shadow: inset 0 0px 25px 0 rgba(20, 20, 50, 0.7);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-outline {
+        font: 400 1rem/1.5rem Poppins, sans-serif;
+        border: 1px solid #707092;
+        color: #707092;
+        padding: 1rem 1.5rem;
+        border-radius: 0.75rem;
+        background-color: transparent;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-outline:hover {
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-outline:hover div path {
+        fill: #FFFFFF;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .right-column {
+        width: 100%;
+      }
+
+      @media (min-width: 576px) {
+        .header-2-3 .modal-item .modal-dialog {
+          max-width: 95%;
+          border-radius: 12px;
+        }
+
+        .header-2-3 .navbar {
+          padding: 3rem 2rem;
+        }
+
+
+
+        .header-2-3 .hero {
+          padding: 3rem 2rem 5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .header-2-3 .hero .tengah {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+        .header-2-3 .hero .tengah h1 {
+          
+          font-size: 70px;
+          color: black;
+        }
+        .header-2-3 .hero .tengah h3 {
+          
+          font-size: 70px;
+          color: black;
+        }
+
+        .header-2-3 .title-text-big {
+          font-size: 3rem;
+          line-height: 1.2;
+        }
+        
+      }
+
+      @media (min-width: 768px) {
+        .header-2-3 .navbar {
+          padding: 3rem 4rem;
+        }
+
+        .header-2-3 .hero {
+          padding: 3rem 4rem 5rem;
+        }
+
+        .header-2-3 .left-column {
+          margin-bottom: 3rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .header-2-3 .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: 1.25rem;
+          padding-left: 1.25rem;
+        }
+
+        .header-2-3 .navbar {
+          padding: 3rem 6rem;
+        }
+
+        .header-2-3 .hero {
+          padding: 3rem 6rem 5rem;
+        }
+
+        .header-2-3 .left-column {
+          width: 50%;
+          margin-bottom: 0;
+        }
+
+        .header-2-3 .title-text-big {
+          font-size: 3.75rem;
+          line-height: 1.2;
+        }
+
+        .header-2-3 .right-column {
+          width: 50%;
+        }
+      }
+    
+      
+      .content-2-3 .btn:focus,
+      .content-2-3 .btn:active {
+        outline: none !important;
+      }
+
+      .content-2-3 .title-text {
+        padding-top: 5rem;
+        margin-bottom: 3rem;
+      }
+
+      .content-2-3 .text-title {
+        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        margin-bottom: 0.625rem;
+        font-size: 60px;
+      }
+
+      .content-2-3 .text-caption {
+        color: #707092;
+        font-weight: 300;
+      }
+
+      .content-2-3 .column {
+        padding: 2rem 2.25rem;
+      }
+
+      .content-2-3 .icon {
+        margin-bottom: 1.5rem;
+      }
+
+      .content-2-3 .icon-title {
+        font: 500 1.5rem/2rem Poppins, sans-serif;
+        margin-bottom: 0.625rem;
+      }
+
+      .content-2-3 .icon-caption {
+        font: 400 1rem/1.625 Poppins, sans-serif;
+        letter-spacing: 0.025em;
+        color: #707092;
+      }
+
+      .content-2-3 .card {
+        padding: 1.75rem;
+        background-color: #292952;
+        border-radius: 0.75rem;
+        border: 1px solid #4c4c6d;
+      }
+
+      .content-2-3 .card-block {
+        padding: 1rem 1rem 5rem;
+      }
+
+      .content-2-3 .card-title {
+        font: 600 1.5rem/2rem Poppins, sans-serif;
+        margin-bottom: 0.625rem;
+      }
+
+      .content-2-3 .card-caption {
+        font: 300 1rem/1.5rem Poppins, sans-serif;
+        color: #707092;
+        letter-spacing: 0.025em;
+        margin-bottom: 0;
+      }
+
+      .content-2-3 .btn-card {
+        font: 700 1rem/1.5rem Poppins, sans-serif;
+        background-color: #524eee;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.75rem;
+        margin-bottom: 1.25rem;
+        border: none;
+      }
+
+      .content-2-3 .btn-card:hover {
+        --tw-shadow: inset 0 0px 25px 0 rgba(20, 20, 50, 0.7);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      }
+
+      .content-2-3 .btn-outline {
+        font: 400 1rem/1.5rem Poppins, sans-serif;
+        color: #57578e;
+        border: 1px solid #57578e;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 100%;
+        border-radius: 0.75rem;
+      }
+
+      .content-2-3 .btn-outline:hover {
+        border: 1px solid #ffffff;
+        color: #ffffff;
+      }
+
+      .content-2-3 .card-text {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+      }
+
+      .content-2-3 .grid-padding {
+        padding: 0rem 1rem 3rem;
+      }
+
+      @media (min-width: 576px) {
+        .content-2-3 .grid-padding {
+          padding: 0rem 2rem 3rem;
+        }
+
+        .content-2-3 .card-block {
+          padding: 3rem 2rem 5rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .content-2-3 .grid-padding {
+          padding: 0rem 4rem 3rem;
+        }
+
+        .content-2-3 .card-block {
+          padding: 3rem 4rem 5rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .content-2-3 .grid-padding {
+          padding: 1rem 6rem 3rem;
+        }
+
+        .content-2-3 .card-block {
+          padding: 3rem 6rem 5rem;
+        }
+
+        .content-2-3 .column {
+          padding: 0rem 2.25rem;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .content-2-3 .grid-padding {
+          padding: 1rem 10rem 3rem;
+        }
+
+        .content-2-3 .card-block {
+          padding: 3rem 6rem 5rem;
+        }
+
+        .content-2-3 .card-btn-space {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        .content-2-3 .btn-outline,
+        .content-2-3 .btn-card {
+          width: 95%;
+          float: right;
+        }
+      }
+
+      @media (max-width: 980px) {
+        .content-2-3 .card-btn-space {
+          width: 100%;
+        }
+      }
+
+      .gambar img {
+        width: 600px;
+      }
+      /* my style */
+    /* match update */
+
+    .match-update {
+        color: #243163;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+    
+    
+    .match-update h2 {
+        margin: 20px 0;
+        
+    }
+    
+    .display {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .card-match {
+        margin: 10px 10px;
+        color: white;
+        padding: 20px 0px 0px 0px;
+        border-radius: 30px;
+        background: linear-gradient(
+        60deg,
+        #de7deb 0%,
+        #18a3f3 100%
+      );
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        transition: 0.7s;
+    }
+
+    .card-match .card-body a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .card-match .card-body p {
+        color: white;
+        font: bold; 
+    }
+
+    /* .card-match .card-body p:hover {
+        color: white;
+    } */
+    
+  .card-match:hover {
+    background: linear-gradient(
+      60deg,
+      #3dadee 0%,
+      #eb7deb 100%
+    );;
+        border: 1px solid #5f97ec;
+        padding: 50px 10px 10px 0px;
+    } 
+    .card-match .btn {
+        background-color: #56568f;
+        border: 1px solid #4b4b8d;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .card-match .btn:hover {
+        padding: 15px 20px;
+        color: white;
+        background-color: rgb(56, 56, 100);
+      
+    }
+
+    
+
+    /* akhir match update */
+    
+
+    .card .competisi-content {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card h5 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .card .competisi-content  p {
+        background-color: #707092;
+        padding: 5px 15px;
+        margin: 5px;
+        border-radius: 20px;
+        
+
+    }
+
+    /* matchday */
+    .maches {
+      width: 80%;
+      max-width: 900px;
+      height: auto;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1 fr);
+      grid-template-rows: auto;
+      grid-template-areas: 
+      'header header header'
+      'match standing player'
+      'main main main'
+      'footer footer footer';
+  }
+  
+  .maches p {
+      font-size: 20px;
+  }
+  
+  header {
+      
+      grid-area: header;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px;
+      background-color: #66A4F5;
+      color: white;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      padding: 30px;
+  }
+  
+  .match {
+      
+      grid-area: match;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #66A4F5;
+      color: white;
+      
+      
+      
+  }
+  
+  .match a {
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:5px 0px 15px 0px;
+      
+      
+  }
+  
+  .match a:hover {
+      background-color: #3e81d8;
+      font-size: large;
+  
+  }
+  
+  .standing {
+      background-color: #66A4F5;
+      color: white;
+      grid-area: standing;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .standing a {
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:5px 0px 15px 0px;
+  }
+  
+  .standing a:hover {
+      background-color: #3e81d8;
+      font-size: large;
+  }
+  
+  .player {
+      background-color: #66A4F5;
+      color: white;
+      grid-area: player;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .player a {
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:5px 0px 15px 0px;
+  }
+  
+  .player a:hover {
+      background-color: #3e81d8;
+      font-size: large;
+  }
+  
+  main {
+      background-color: white;
+      grid-area: main;
+      width: 100%;
+      
+  }
+  
+  footer {
+      
+      grid-area: footer;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      background-color: white;
+  
+  }
+  
+  footer a {
+      padding: 20px 55px;
+      border-radius:20%;
+      border:1px solid #66A4F5;
+      height: 10px;
+      width: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: #66A4F5;
+      transition: 0.5s;
+      font-size: 15px;
+  
+  }
+  
+  footer a:hover {
+      background-color: #66A4F5;
+      padding: 25px 75px;
+      color: white;
+      font-size: 18px;
+  }
+  
+  /* main matchday */
+  .main-content {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .main-matchday {
+      width: 50%;
+      height: 200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: 
+      'logo-home team-home score-home date'
+      'logo-away team-away score-away date'
+      ;
+      border: 1px solid rgb(211, 206, 206);
+      box-sizing: border-box;
+  }
+  
+  .main-matchday:hover {
+      background-color: rgb(228, 227, 227);
+  }
+  .logo-home {
+      
+      grid-area: logo-home;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+  
+  .team-home {
+      
+      grid-area: team-home;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 20px;
+  }
+  
+  
+  .score-home {
+      
+      grid-area: score-home;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+  }
+  
+  .logo-away {
+     
+      grid-area: logo-away;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+  
+  .team-away {
+      
+      grid-area: team-away;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 20px;
+  }
+  
+  .score-away {
+      
+      grid-area: score-away;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+  }
+  
+  .date {
+      
+      grid-area: date;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      
+      
+      
+  }
+  
+  /* responsif */
+  @media (max-width:920px) {
+      .main-matchday {
+          width: 100%;
+      }
+  
+      .logo-home {
+          justify-content: center;
+      }
+  
+      .logo-away {
+          justify-content: center;
+      }
+  
+      .date {
+          justify-content: flex-start;
+          padding: 0px;
+      }
+      header {
+          padding: 50px;
+      }
+  }
+    /* akhir matchday */
